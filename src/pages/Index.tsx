@@ -4,77 +4,80 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">ЗЕНИТ*ЙОГА</div>
         <nav>
-          <a href="#">Меню</a>
-          <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#">Расписание</a>
+          <a href="#">Практики</a>
+          <a href="#">Атмосфера</a>
+          <a href="#">Контакты</a>
         </nav>
-        <button className="btn-cta">Забронировать</button>
+        <button className="btn-cta">Записаться</button>
       </header>
 
       <main>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              НАЙДИ
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              СВОЙ <span>ПОКОЙ</span>
             </h1>
-            <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+            <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#5a4a42]">
+              Студия йоги и медитации в духе осознанных 70-х. Живые практики, опытные мастера и атмосфера, которая возвращает к себе.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+                Записаться на класс
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+                Смотреть расписание
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div
+            className="hero-img"
+            style={{
+              background: `url("https://cdn.poehali.dev/projects/47f80ae3-6b49-417f-81cd-4a46ece9a3b3/files/0f0ee2c1-1407-41ff-a8f6-e6064d4c48f4.jpg") center center / cover`,
+            }}
+          >
             <div className="sticker">
-              СВЕЖАК
+              ДУША
               <br />
-              КАЖДЫЙ ДЕНЬ
+              В ПОТОКЕ
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #ОСОЗНАННОСТЬ
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              ДЫШИ
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * ХАТХА ЙОГА * МЕДИТАЦИЯ * ПРАНАЯМА * ИНЬ ЙОГА * SOUND HEALING * УТРЕННИЕ ПРАКТИКИ * НИДРА * ХАТХА ЙОГА * МЕДИТАЦИЯ * ПРАНАЯМА * ИНЬ ЙОГА * SOUND HEALING * УТРЕННИЕ ПРАКТИКИ * НИДРА
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">НАШИ ПРАКТИКИ</h2>
             <a
               href="#"
               className="text-sm md:text-base"
               style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
             >
-              Всё меню
+              Всё расписание
             </a>
           </div>
 
           <div className="menu-grid">
-            {/* Item 1 */}
             <div className="menu-card">
-              <span className="menu-tag">Хит продаж</span>
+              <span className="menu-tag">Популярное</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                src="https://cdn.poehali.dev/projects/47f80ae3-6b49-417f-81cd-4a46ece9a3b3/files/8f5a0960-523f-40b3-a633-6caecf39bcaf.jpg"
+                alt="Хатха йога"
               />
               <div className="menu-card-body">
                 <div
@@ -85,23 +88,22 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>Хатха Йога</h3>
+                  <span className="price">1 500 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                <p style={{ fontSize: "14px", color: "#7a6558" }}>
+                  Классическая практика для тела и ума. Асаны, дыхание, концентрация — для любого уровня подготовки.
                 </p>
               </div>
             </div>
 
-            {/* Item 2 */}
             <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
+              <span className="menu-tag" style={{ background: "var(--secondary)", color: "white" }}>
+                Восстановление
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                src="https://cdn.poehali.dev/projects/47f80ae3-6b49-417f-81cd-4a46ece9a3b3/files/cffc08f4-bf45-400d-a664-65809b14b0f0.jpg"
+                alt="Медитация"
               />
               <div className="menu-card-body">
                 <div
@@ -112,21 +114,20 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>Медитация & Нидра</h3>
+                  <span className="price">1 200 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#7a6558" }}>Глубокое расслабление и осознанность. Йога-нидра снимает стресс и восстанавливает энергию за 40 минут.</p>
               </div>
             </div>
 
-            {/* Item 3 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Популярное
+                Хит утра
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://cdn.poehali.dev/projects/47f80ae3-6b49-417f-81cd-4a46ece9a3b3/files/fea29cc3-26b0-4540-af9c-e8c7d1835ed3.jpg"
+                alt="Утренняя практика"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +138,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>Утренний поток</h3>
+                  <span className="price">1 000 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                <p style={{ fontSize: "14px", color: "#7a6558" }}>
+                  Динамичная виньяса-флоу с 7:00 утра. Лучший способ начать день в балансе и с ясным умом.
                 </p>
               </div>
             </div>
@@ -150,10 +151,9 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">МЕСТО, ГДЕ ВРЕМЯ ЗАМЕДЛЯЕТСЯ.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Мы не просто проводим занятия. Мы создаём пространство для себя. Деревянные полы, свечи, живые растения и запах сандала — каждая деталь настраивает на практику с первого вдоха.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
               Наша история
@@ -164,31 +164,31 @@ export default function Index() {
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            @ЗЕНИТ.ЙОГА
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
+                src="https://cdn.poehali.dev/projects/47f80ae3-6b49-417f-81cd-4a46ece9a3b3/files/0f0ee2c1-1407-41ff-a8f6-e6064d4c48f4.jpg"
+                alt="Студия йоги"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
+                src="https://cdn.poehali.dev/projects/47f80ae3-6b49-417f-81cd-4a46ece9a3b3/files/8f5a0960-523f-40b3-a633-6caecf39bcaf.jpg"
+                alt="Класс медитации"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
+                src="https://cdn.poehali.dev/projects/47f80ae3-6b49-417f-81cd-4a46ece9a3b3/files/fea29cc3-26b0-4540-af9c-e8c7d1835ed3.jpg"
+                alt="Аксессуары для йоги"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
+                src="https://cdn.poehali.dev/projects/47f80ae3-6b49-417f-81cd-4a46ece9a3b3/files/cffc08f4-bf45-400d-a664-65809b14b0f0.jpg"
+                alt="Утренняя медитация"
               />
             </div>
           </div>
@@ -197,9 +197,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
-          <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+          <div className="footer-logo">ЗЕНИТ*ЙОГА</div>
+          <p style={{ color: "#8a7a72", lineHeight: 1.6 }}>
+            Твоё пространство для практики и внутреннего покоя. С 2024, но ощущается как вечность.
           </p>
         </div>
         <div className="footer-links">
@@ -207,39 +207,53 @@ export default function Index() {
           <ul>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Меню
+                Расписание
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                О нас
+                Практики
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
+                О студии
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+                Контакты
               </a>
             </li>
           </ul>
         </div>
         <div className="footer-links">
-          <h4>Часы работы</h4>
+          <h4>Расписание</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Пн–Пт: 07:00 – 21:00</li>
+            <li>Сб: 08:00 – 19:00</li>
+            <li>Вс: 09:00 – 17:00</li>
           </ul>
         </div>
-        <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+        <div className="footer-links">
+          <h4>Соцсети</h4>
+          <ul>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                VK
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </>
